@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.event.CreateEvent">
+
+    <include layout="@layout/toolbar_main"
+        android:id="@+id/toolbarevent"/>
+    <ProgressBar
+        android:id="@+id/progloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarevent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/addEventImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_update_dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/viewEventImage"
+            app:layout_constraintEnd_toEndOf="@id/viewEventImage" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".25" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/viewEventImage"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:background="#10ffffff"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@android:drawable/ic_menu_gallery" />-->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewEventImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:background="#10ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/tabCreateEvent"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/viewEventImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabRippleColor="@null"/>
+
+        <EditText
+            android:id="@+id/addEventName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewEventImage" />
+
+        <EditText
+            android:id="@+id/addEventDescription"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Event Description"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEventName" />
+
+        <EditText
+            android:id="@+id/addEventUrl"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Registration Url"
+            android:inputType="textUri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEventDescription" />
+
+        <android.widget.Button
+            android:id="@+id/createEventButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_design3"
+            android:text="Create Event"
+            android:textColor="@color/colorwhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintStart_toStartOf="@+id/guideline26"
+            app:layout_constraintTop_toBottomOf="@+id/addOrganizer" />
+
+        <EditText
+            android:id="@+id/addEventDate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clickable="false"
+            android:layout_marginLeft="10dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Start Date"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEventUrl" />
+
+        <EditText
+            android:id="@+id/addendEventDate"
+            android:layout_width="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="End Date"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEventUrl" />
+
+        <EditText
+            android:id="@+id/addOrganizer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="Organized By"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEventDate" />
+
+        <LinearLayout
+            android:id="@+id/blurrScreenEvent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#70000000"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</RelativeLayout>

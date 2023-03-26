@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+    android:paddingTop="24dp"
+    android:layout_height="match_parent">
+
+   <WebView
+       android:id="@+id/webView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:layout_above="@id/adView"/>
+
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/prog"
+       android:indeterminate="true"
+       android:indeterminateTint="@color/latestBlue"
+       android:layout_centerInParent="true" />
+
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_centerInParent="true"
+       app:srcCompat="@drawable/warning" />
+
+   <TextView
+       android:id="@+id/tv_error"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_x="182dp"
+       android:layout_y="360dp"
+       android:text="@string/Internet"
+       android:textColor="#636363"
+       android:textSize="20sp"
+       android:layout_below="@id/imageView"
+       android:layout_centerHorizontal="true"/>
+
+   <TextView
+       android:id="@+id/texterror"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/prog"
+       android:text="Unstable Connection. PLease Wait...." />
+
+   <com.google.android.gms.ads.AdView
+       android:id="@+id/adView"
+       ads:adSize="BANNER"
+       ads:adUnitId="@string/banner_ad_unit_id_test"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"/>
+</RelativeLayout>

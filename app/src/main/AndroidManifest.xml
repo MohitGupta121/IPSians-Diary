@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.college.collegeconnect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".CollegeConnect"
+        android:allowBackup="true"
+        android:configChanges="uiMode"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.PdfViewerActivity"
+            android:exported="true"/>
+        <activity
+            android:exported="true"
+            android:name=".ui.event.bvest.RegisterEventActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".ui.event.bvest.TeamDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.MyFilesActivity"
+            android:parentActivityName=".settingsActivity.MyFilesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".ui.event.bvest.BvestEventActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".ui.event.bvest.BvestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".timetable.TimeTableScheduleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".activities.FeedbackActivity"
+            android:parentActivityName=".activities.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.WorkProfile"
+            android:parentActivityName=".settingsActivity.WorkProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:exported="true"
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <activity
+            android:exported="true"
+            android:name=".activities.OnBoardingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".ui.event.CreateEvent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".ui.event.UpcomingEvents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".activities.ContributeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.AboutActivity"
+            android:parentActivityName=".settingsActivity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.ContactActivity"
+            android:parentActivityName=".settingsActivity.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.MyUploadsActivity"
+            android:parentActivityName=".settingsActivity.MyUploadsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.HomeEditActivity"
+            android:parentActivityName=".settingsActivity.HomeEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".settingsActivity.SettingsActivity"
+            android:parentActivityName=".settingsActivity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/banner_ad_app_id_test" />
+
+        <activity
+            android:exported="true"
+            android:name=".activities.StepTwoSignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".activities.DownloadNotes"
+            android:label="DownloadNotes"
+            android:parentActivityName=".activities.DownloadNotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".activities.UploadNotes"
+            android:label="Upload"
+            android:parentActivityName=".activities.UploadNotes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter
+                android:icon="@mipmap/icon_round"
+                android:label="Upload Notes"
+                android:priority="10000">
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:name=".timetable.TimeTable"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Time Table"
+            android:parentActivityName=".timetable.TimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".timetable.NewTimeTable"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Time Table"
+            android:parentActivityName=".timetable.NewTimeTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:exported="true"
+            android:name=".activities.Navigation"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".activities.SignUp"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".activities.SignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:exported="true"
+            android:name=".activities.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:name=".activities.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- &lt;!&ndash; -<category android:Name="android.intent.category.LAUNCHER" /> &ndash;&gt; -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:exported="true"
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".timetable.BackgroundService" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default _notification_icon"
+            android:resource="@drawable/ic_stat_call_white" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/newBlue" />
+
+<!--        <receiver-->
+<!--            android:name=".timetable.AlertReceiver"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true"-->
+<!--            android:process=":remote">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.BOOT_COMPLETED" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+    </application>
+
+</manifest>
