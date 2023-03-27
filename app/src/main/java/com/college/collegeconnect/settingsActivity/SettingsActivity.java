@@ -96,7 +96,6 @@ public class SettingsActivity extends AppCompatActivity {
         options.add("Rate Us");
         options.add("Contact Us");
         options.add("About");
-        options.add("Export Attendance");
 
         recyclerView = findViewById(R.id.settings_recycler);
         recyclerView.setHasFixedSize(true);
@@ -114,7 +113,12 @@ public class SettingsActivity extends AppCompatActivity {
         });
         //Logout
         logout = findViewById(R.id.logoutButton);
-        logout.setOnClickListener(v -> logOutDialog());
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logOutDialog();
+            }
+        });
     }
 
     @Override
@@ -187,7 +191,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.gitHub) {
-            String url = "https://github.com/collegeconnect/CollegeConnect";
+            String url = "https://github.com/mohitgupta121";
             CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
             builder.setToolbarColor(getColor(R.color.latestBlue));
             CustomTabsIntent customTabsIntent = builder.build();

@@ -78,7 +78,7 @@ public class ContributeActivity extends AppCompatActivity {
 
                     final Intent intent_email = new Intent(android.content.Intent.ACTION_SEND);
                     intent_email.setType("text/plain");
-                    String[] recipients = {"college.connect8@gmail.com"};
+                    String[] recipients = {"mohitgupta7780@gmail.com"};
                     intent_email.putExtra(Intent.EXTRA_EMAIL, recipients);
                     intent_email.putExtra(android.content.Intent.EXTRA_TEXT, mesaage);
                     final PackageManager pm = getPackageManager();
