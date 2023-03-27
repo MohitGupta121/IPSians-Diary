@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.college.collegeconnect">
+    package="com.mohit.ipsians_diary">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -22,38 +22,38 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.event.bvest.RegisterEventActivity"
+            android:name="com.mohit.ipsians_diary.ui.event.bvest.RegisterEventActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.event.bvest.TeamDetails"
+            android:name="com.mohit.ipsians_diary.ui.event.bvest.TeamDetails"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".settingsActivity.MyFilesActivity"
-            android:parentActivityName=".settingsActivity.MyFilesActivity"
+            android:name="com.mohit.ipsians_diary.settingsActivity.MyFilesActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.MyFilesActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.event.bvest.BvestEventActivity"
+            android:name="com.mohit.ipsians_diary.ui.event.bvest.BvestEventActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.event.bvest.BvestActivity"
+            android:name="com.mohit.ipsians_diary.ui.event.bvest.BvestActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".timetable.TimeTableScheduleActivity"
+            android:name="com.mohit.ipsians_diary.timetable.TimeTableScheduleActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.FeedbackActivity"
-            android:parentActivityName=".activities.FeedbackActivity"
+            android:name="com.mohit.ipsians_diary.activities.FeedbackActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.activities.FeedbackActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".settingsActivity.WorkProfile"
-            android:parentActivityName=".settingsActivity.WorkProfile"
+            android:name="com.mohit.ipsians_diary.settingsActivity.WorkProfile"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.WorkProfile"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
@@ -62,16 +62,16 @@
             android:value="true" />
 
         <activity
-            android:name=".activities.OnBoardingScreen"
+            android:name="com.mohit.ipsians_diary.activities.OnBoardingScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.event.CreateEvent"
+            android:name="com.mohit.ipsians_diary.ui.event.CreateEvent"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.event.UpcomingEvents"
+            android:name="com.mohit.ipsians_diary.ui.event.UpcomingEvents"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.ContributeActivity"
+            android:name="com.mohit.ipsians_diary.activities.ContributeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
@@ -86,25 +86,25 @@
         </provider>
 
         <activity
-            android:name=".settingsActivity.AboutActivity"
-            android:parentActivityName=".settingsActivity.AboutActivity"
+            android:name="com.mohit.ipsians_diary.settingsActivity.AboutActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.AboutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".settingsActivity.ContactActivity"
-            android:parentActivityName=".settingsActivity.ContactActivity"
+            android:name="com.mohit.ipsians_diary.settingsActivity.ContactActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.ContactActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".settingsActivity.MyUploadsActivity"
-            android:parentActivityName=".settingsActivity.MyUploadsActivity"
+            android:name="com.mohit.ipsians_diary.settingsActivity.MyUploadsActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.MyUploadsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".settingsActivity.HomeEditActivity"
-            android:parentActivityName=".settingsActivity.HomeEditActivity"
+            android:name="com.mohit.ipsians_diary.settingsActivity.HomeEditActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.HomeEditActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".settingsActivity.SettingsActivity"
-            android:parentActivityName=".settingsActivity.SettingsActivity"
+            android:name="com.mohit.ipsians_diary.settingsActivity.SettingsActivity"
+            android:parentActivityName="com.mohit.ipsians_diary.settingsActivity.SettingsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
 
@@ -113,18 +113,18 @@
             android:value="@string/banner_ad_app_id_test" />
 
         <activity
-            android:name=".activities.StepTwoSignUp"
+            android:name="com.mohit.ipsians_diary.activities.StepTwoSignUp"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.DownloadNotes"
+            android:name="com.mohit.ipsians_diary.activities.DownloadNotes"
             android:label="DownloadNotes"
-            android:parentActivityName=".activities.DownloadNotes"
+            android:parentActivityName="com.mohit.ipsians_diary.activities.DownloadNotes"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.UploadNotes"
+            android:name="com.mohit.ipsians_diary.activities.UploadNotes"
             android:label="Upload"
-            android:parentActivityName=".activities.UploadNotes"
+            android:parentActivityName="com.mohit.ipsians_diary.activities.UploadNotes"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
             <intent-filter
@@ -140,30 +140,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".timetable.TimeTable"
+            android:name="com.mohit.ipsians_diary.timetable.TimeTable"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Time Table"
-            android:parentActivityName=".timetable.TimeTable"
+            android:parentActivityName="com.mohit.ipsians_diary.timetable.TimeTable"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".timetable.NewTimeTable"
+            android:name="com.mohit.ipsians_diary.timetable.NewTimeTable"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Time Table"
-            android:parentActivityName=".timetable.NewTimeTable"
+            android:parentActivityName="com.mohit.ipsians_diary.timetable.NewTimeTable"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.Navigation"
+            android:name="com.mohit.ipsians_diary.activities.Navigation"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.SignUp"
+            android:name="com.mohit.ipsians_diary.activities.SignUp"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".activities.SignUp"
+            android:parentActivityName="com.mohit.ipsians_diary.activities.SignUp"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.Splash"
+            android:name="com.mohit.ipsians_diary.activities.Splash"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -173,7 +173,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.MainActivity"
+            android:name="com.mohit.ipsians_diary.activities.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait">
 
@@ -193,13 +193,13 @@
             android:resource="@array/preloaded_fonts" />
 
         <service
-            android:name=".MyFirebaseMessagingService"
+            android:name="com.mohit.ipsians_diary.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".timetable.BackgroundService" />
+        <service android:name="com.mohit.ipsians_diary.timetable.BackgroundService" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default _notification_icon"
@@ -209,7 +209,7 @@
             android:resource="@color/newBlue" />
 
         <receiver
-            android:name=".timetable.AlertReceiver"
+            android:name="com.mohit.ipsians_diary.timetable.AlertReceiver"
             android:enabled="true"
             android:exported="true"
             android:process=":remote">

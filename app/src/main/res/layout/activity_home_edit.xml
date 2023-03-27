@@ -48,7 +48,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline20"
             app:layout_constraintTop_toBottomOf="@+id/imageView3copy" />
 
-        <com.college.collegeconnect.customviews.EditTextWithEditButton
+        <com.mohit.ipsians_diary.customviews.EditTextWithEditButton
             android:id="@+id/nameFieldcopy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             app:hint="Name"
             app:inputType="normalText" />
 
-        <com.college.collegeconnect.customviews.EditTextWithEditButton
+        <com.mohit.ipsians_diary.customviews.EditTextWithEditButton
             android:id="@+id/textView3copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             app:inputType="number"
             />
 
-        <com.college.collegeconnect.customviews.EditTextWithEditButton
+        <com.mohit.ipsians_diary.customviews.EditTextWithEditButton
             android:id="@+id/textView6copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             app:inputType="number"
             />
 
-        <com.college.collegeconnect.customviews.EditTextWithEditButton
+        <com.mohit.ipsians_diary.customviews.EditTextWithEditButton
             android:id="@+id/textView5copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             app:hint="COLLEGE"
             />
 
-        <com.college.collegeconnect.customviews.EditTextWithEditButton
+        <com.mohit.ipsians_diary.customviews.EditTextWithEditButton
             android:id="@+id/textView4copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
