@@ -66,7 +66,7 @@ public class ContactActivity extends AppCompatActivity {
         findViewById(R.id.email_contact).setOnClickListener(v -> {
             final Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String[] recipients = {"college.connect8@gmail.com"};
+            String[] recipients = {"mohitgupta7780@gmail.com"};
             intent.putExtra(Intent.EXTRA_EMAIL, recipients);
             String mess = "Manufacturer: "+Build.MANUFACTURER + "\n"
                     + "Brand: " + Build.BRAND + "\n"
@@ -103,7 +103,7 @@ public class ContactActivity extends AppCompatActivity {
                 String message = textView.getText().toString();
                 final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                String[] recipients = {"college.connect8@gmail.com"};
+                String[] recipients = {"mohitgupta7780@gmail.com"};
                 intent.putExtra(Intent.EXTRA_EMAIL, recipients);
                 if (feedback.isChecked() && issue.isChecked())
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback | Issue");

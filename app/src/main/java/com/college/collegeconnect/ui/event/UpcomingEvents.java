@@ -30,6 +30,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class UpcomingEvents extends AppCompatActivity {
     private FloatingActionButton createEvent;
@@ -53,9 +54,9 @@ public class UpcomingEvents extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(listener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                ArrayList<String> arrayList = (ArrayList<String>) dataSnapshot.getValue();
-                Log.d("Upcoming Events", "onDataChange: " + arrayList.size());
-                if (arrayList.contains(SaveSharedPreference.getUserName(UpcomingEvents.this)))
+                String admin = (String) dataSnapshot.child("user").getValue();
+                Log.d("Upcoming Events", "onDataChange: " + dataSnapshot.hasChild("user") + SaveSharedPreference.getUserName(UpcomingEvents.this));
+                if (Objects.requireNonNull(admin).equals(SaveSharedPreference.getUserName(UpcomingEvents.this)))
                     createEvent.setVisibility(View.VISIBLE);
             }
 
