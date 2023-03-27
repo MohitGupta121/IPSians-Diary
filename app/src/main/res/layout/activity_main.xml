@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_ui"
-    tools:context="com.college.collegeconnect.activities.MainActivity">
+    tools:context="com.mohit.ipsians_diary.activities.MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

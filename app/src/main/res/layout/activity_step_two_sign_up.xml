@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_sign_up"
-    tools:context="com.college.collegeconnect.activities.StepTwoSignUp">
+    tools:context="com.mohit.ipsians_diary.activities.StepTwoSignUp">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/otherCollege"

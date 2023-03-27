@@ -21,6 +21,6 @@
 #-renamesourcefileattribute SourceFile
 
 # Keep custom model classes
--keep class com.college.collegeconnect.datamodels.* { *; }
--keep class com.college.collegeconnect.adapters.* { *; }
--keep class com.college.collegeconnect.utils.* { *; }
+-keep class com.mohit.ipsians_diary.datamodels.* { *; }
+-keep class com.mohit.ipsians_diary.adapters.* { *; }
+-keep class com.mohit.ipsians_diary.utils.* { *; }
