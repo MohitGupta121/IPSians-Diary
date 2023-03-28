@@ -3,9 +3,9 @@
     <item
         android:drawable="@android:color/white"/>
 
-    <item android:width="300dp"
-        android:height="400dp"
-        android:drawable="@drawable/cc2"
+    <item android:width="250dp"
+        android:height="250dp"
+        android:drawable="@drawable/logo"
         android:gravity="center"/>
 
 </layer-list>
