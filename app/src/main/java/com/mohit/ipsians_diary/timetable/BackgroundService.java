@@ -58,8 +58,8 @@ public class BackgroundService extends Service {
     private void showNotification(Context context) {
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context, Navigation.CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_stat_call_white)
-                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.icon_round))
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.logo))
                 .setContentTitle("title")
                 .setContentText("body")
                 .setColor(Color.parseColor("#138FF7"))

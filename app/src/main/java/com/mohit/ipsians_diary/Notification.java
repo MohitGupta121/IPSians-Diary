@@ -23,8 +23,8 @@ public class Notification {
         PendingIntent pendingIntent = PendingIntent.getActivity(mCtx, 100, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(mCtx, Navigation.CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_stat_call_white)
-                .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.mipmap.icon_round))
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.mipmap.ic_launcher))
                 .setContentTitle(title)
                 .setContentText(body)
                 .setColor(Color.parseColor("#138FF7"))

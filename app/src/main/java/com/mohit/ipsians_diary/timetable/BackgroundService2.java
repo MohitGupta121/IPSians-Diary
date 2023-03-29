@@ -18,8 +18,8 @@ public class BackgroundService2 extends JobIntentService {
     @Override
     protected void onHandleWork(@NonNull Intent intent) {
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), Navigation.CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_stat_call_white)
-                .setLargeIcon(BitmapFactory.decodeResource(getApplicationContext().getResources(), R.mipmap.icon_round))
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.logo))
                 .setContentTitle("title")
                 .setContentText("body")
                 .setColor(Color.parseColor("#138FF7"))
